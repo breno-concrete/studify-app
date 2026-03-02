@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home_view(request):
-    return HttpResponse("Bem-vindo ao Studify! 📚")
+    return render(request,
+                  'index.html')
